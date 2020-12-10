@@ -3,6 +3,9 @@
 /* font-family: 'Commissioner', sans-serif; */
 /* font-family: 'Montserrat', sans-serif; */
 
+/* nhung phan ap dung chung cho toan trang web se tach rieng ra */
+
+/* chu y noi cach lay font va icon dac biet */
 
 * {
     margin: 0;
@@ -11,33 +14,51 @@
     text-decoration: none;
 }
 
+/* 1 */
 .max-width {
     max-width: 1300px;
     padding: 50px;
     margin: 0 auto;
 }
 
+/* thanh orange bar */
+.max-width .title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    text-align: center;
+}
+
+.max-width .orange-bar {
+    width: 100px;
+    height: 2px;
+    background-color: orange;
+    margin-top: 30px;
+}
+
 /* Home Menu  */
 
 .home-menu {
-    background-image: url('./image/hero.jpg');
+    background-image: url('../image/hero.jpg');
     height: 700px;
     background-size: cover;
-    object-fit: bottom;
+
+    /* 2 */
     position: relative;
     z-index: 1;
 }
 
+
+/* 2 */
 .opacity-menu {
     width: 100%;
     height: 100%;
     background-color: black;
-    opacity: 0.5;
+    opacity: 0.7;
     z-index: 2;
     position: absolute;
 }
 
-/* nav style  */
+/* nav style 1  */
 
 nav {
     margin-left: 10%;
@@ -48,6 +69,7 @@ nav .max-width {
     justify-content: space-around;
 }
 
+/* noi sau khi cho vao opacity */
 .max-width .logo {
     z-index: 9;
 }
@@ -59,6 +81,8 @@ nav .max-width {
 
 .max-width .menu {
     width: 800px;
+    /* add vao de them hieu ung  */
+    line-height: 50px;
     list-style: none;
     display: flex;
     flex-direction: row;
@@ -70,6 +94,8 @@ nav .max-width {
     color: white;
     font-family: 'Commissioner', sans-serif;
     font-size: 20px;
+
+    /* noi sau khi opacity  */
     z-index: 4;
 }
 
@@ -81,6 +107,8 @@ nav .max-width {
     margin-top: 8%;
     color: white;
     position: relative;
+
+    /* noi sau khi opacity  */
     z-index: 999;
 }
 
@@ -89,10 +117,12 @@ nav .max-width {
     font-size: 50px;
     font-weight: 150;
     line-height: 60px;
+
+    /* noi sau khi opacity  */
     z-index: 9;
 }
 
-.content-menu .multi-button{
+.content-menu .multi-button {
     width: 320px;
     margin-top: 20px;
     display: flex;
@@ -100,52 +130,39 @@ nav .max-width {
     justify-content: space-around;
 }
 
-.content-menu .multi-button button{
+.content-menu .multi-button button {
     width: 150px;
     height: 40px;
     outline: none;
     border: none;
     background: none;
-    border: solid 2px orange ;
+    border: solid 2px orange;
     border-radius: 30px;
 }
 
-#button1{
+#button1 {
     background-color: orange;
     color: white;
 }
 
-#button2{
+#button2 {
     color: orange;
 }
 
 
 /* --------------------Home content-------------------- */
 
-.home-content .max-width{
+.home-content .max-width {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.home-content .max-width .title{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 40px;
-    text-align: center;    
-}
-
-.home-content .max-width .orange-bar{
-    width: 100px;
-    height: 2px;
-    background-color: orange;
+.home-content .max-width .about {
     margin-top: 30px;
 }
 
-.home-content .max-width .about{
-    margin-top: 30px;
-}
-
-.max-width .about p{
+.max-width .about p {
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     line-height: 30px;
@@ -154,7 +171,7 @@ nav .max-width {
 
 /* Box content  */
 
-.home-content .max-width .content-boxes{
+.home-content .max-width .content-boxes {
     margin: 0 auto;
     margin-top: 30px;
     width: 1100px;
@@ -164,18 +181,18 @@ nav .max-width {
 }
 
 
-.content-boxes .content-box{
+.content-boxes .content-box {
     width: 250px;
     height: fit-content;
 }
 
-.content-boxes .content-box i{
+.content-boxes .content-box i {
     color: orange;
     font-size: 50px;
     line-height: 70px;
 }
 
-.content-boxes .content-box p{
+.content-boxes .content-box p {
     font-family: 'Montserrat', sans-serif;
     font-size: 15px;
     line-height: 30px;
@@ -183,14 +200,14 @@ nav .max-width {
     text-align: justify;
 }
 
-.content-boxes .content-box .title{
+.content-boxes .content-box .title {
     font-size: 20px;
     text-align: left;
     line-height: 40px;
 }
 
 /* Home banner  */
-.home-banner{
+.home-banner {
     width: 100%;
     margin-top: 30px;
     margin: 0 auto;
@@ -200,16 +217,196 @@ nav .max-width {
 }
 
 
-.home-banner .banner-image{
+.home-banner .banner-image {
     width: 25%;
     height: 275x;
     z-index: 1;
 }
 
-.home-banner .banner-image img{
+.home-banner .banner-image img {
     width: 100%;
     height: 275px;
     border: none;
     display: block;
     z-index: 1;
+}
+
+
+/* --------------------Content-guidance--------------------  */
+
+.content-guidance {
+    width: 100%;
+    height: 700px;
+    background-color: rgb(240, 240, 240);
+}
+
+.content-guidance .max-width {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-guidance .guidance {
+    width: 800px;
+    height: fit-content;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.content-guidance .guidance img {
+    width: 200px;
+    height: 410px;
+}
+
+.guidance .steps {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.steps .step {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.steps .step i {
+    font-size: 50px;
+    color: orange;
+}
+
+.steps .step p {
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.steps .download img {
+    width: 160px;
+    height: 50px;
+}
+
+
+/*----------------- form feedback -----------------*/
+.feedback-form {
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.feedback-form .max-width {
+    width: 50%;
+    margin: 0;
+}
+
+.feedback-form .max-width .title {
+    font-size: 35px;
+}
+
+.feedback-form .max-width .orange-bar {
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+/* form user info  */
+form {
+    width: 50%;
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+form .label-area {
+    width: 100%;
+}
+
+form .label-area p {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 40px;
+}
+
+form .input-area {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+.input-area input {
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+.input-area select {
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+.input-area .check-box {
+    display: flex;
+}
+
+
+.input-area .check-box p {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 30px;
+    margin-left: 10px;
+    display: block;
+    text-align: start
+}
+
+.input-area button {
+    width: 120px;
+    height: 40px;
+    margin-top: 20px;
+    background-color: orange;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/*-------------- footer ------------------- */
+.footer {
+    background-color: black;
+    width: 100%;
+}
+
+.footer .max-width {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer .max-width .info-top {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.info-top .menu {
+    width: 40%;
+}
+
+.info-top .menu a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    color: rgb(179, 177, 177);
+    font-weight: 400;
+}
+
+.footer .max-width .icon-contact {
+    color: rgb(179, 177, 177);
+    width: 15%;
+    margin-top: 10px;
+    font-size: 25px;
+    display: flex;
+    justify-content: space-between;
 }
