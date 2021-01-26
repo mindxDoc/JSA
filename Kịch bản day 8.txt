@@ -1,0 +1,40 @@
+Hi, xin chào các em đã quay trở lại với khóa học web advance tại mindX technology school. 
+
+Trong ngày hôm nay, chúng ta sẽ cùng nhau tìm hiểu về những yếu tố không thể thiếu được đối với mọt trang web, đó chính là Net working và APIs. 
+Cụ thể, trong bài hôm nay, chúng ta sẽ tìm hiểu sơ lược về mô hình Client - server và APIs. Hãy cùng bắt đầu với anh nhé. 
+
+---------Bắt đầu với Client/ server---------------
+Đầu tiên, chúng ta sẽ mở một trang web thông thường, và ở đây anh sẽ chọn trang youtube.com nhé. Để ý một chút, mỗi lần anh cuộn xuống, nội dung trang web sẽ được tải thêm và bổ sung vào trang web. Vậy thử nghiệm nhỏ, tắt mạng đi chúng ta sẽ được gì, em hãy thử và đưa ra câu trả lời cho bản thân nhé.
+Kết quả đã có rồi phải không nào, trang web sẽ không tải thêm được nữa và nội dung sẽ bị bỏ trống.
+
+Hãy nhìn sơ đồ sau đây, client đơn giản là một máy chúng ta sử dụng để truy cập vào các trang web, nó có thể là laptop, máy tính để bàn, điện thoại di động,... Thông qua internet chúng được kết nối tới một nơi gọi là Server và tất nhiên mỗi server sẽ đại diện cho một trang web riêng biệt. Và nếu em chưa biết, server là một máy tính cung cấp và điểu khiển các tiến trình truy cập vào tài nguyên hệ thống. Vậy chứng tỏ server sẽ được sử dụng bởi nhiều người dùng chính là mỗi client khi truy cập web, và nó sẽ quản lý và cung cấp data cho người dùng. 
+Cùng anh nhìn tiếp vào mô hình sau để hiểu hơn mối liên kết client và server. Khi cần sử dụng tài nguyên, client sẽ gửi một hoặc nhiều requests sang phía server, và sau khi server chạy, phân tích yêu cầu sẽ trả về cho client response thông qua phương thức cụ thể ở đây là HTTPS, cụm https này nhìn có vẻ khá là quen phải không các em, hãy thử tự tìm hiểu về nó nhé.
+Đó là toàn bộ những kiến thức cơ bản về mô hình client/server, chúng ta sẽ chuẩn bị đến phần kiến thức tiếp theo là APIs nhé.
+
+---------Giới thiệu về API---------------
+API viết tắt của Application Programming Interface là một phần không thể thiếu được đối với nên tảng web đương đại.
+Có rất rất nhiều bài báo nói về API và tầm quan trọng của nó, các em hãy chủ động đọc thêm nhé và đối với lập trình viên việc tìm hiểu không bao giờ là thừa. Nhưng trong phạm vi bài học hôm nay, anh sẽ đưa ra một định nghĩa dể hiểu đối với API và  cụ thể là Web API: đây là một đường link cho phép người sử dụng kết nối, truy cập hoặc cập nhật cơ sở dữ liệu của một bên khác, cho phép trao đổi dữ liệu giữa các trang web/ phần mềm. 
+
+Chắc đến đây vẫn còn hơi khó hiểu và mông lung với các em đúng không nào, một ví dụ thực tế nhé: chắc nhiều lần các em đã đăng nhập vào một trang web và chọn phương thức đăng nhập với Google, facebook,... ngay khi chọn phương thức này đồng nghĩa với việc trang web sẽ gọi tới AP I của bên mà em chọn, sau đó API sẽ trả về các thông tin cần thiết cho việc đăng nhập. Vậy đó, đối với API việc đăng nhập đã thuận tiện hơn nhiều phải không các em. Trong video tiếp theo, chúng ta sẽ cùng bắt tay tìm hiểu một API thực sự và cách làm việc với chúng nhé.
+
+---------Mở đầu với API-------------------
+Trong phạm vi bài hôm nay, chúng ta sẽ tìm hiểu tập trung vào các API trả về dữ liệu nhé các em.
+Để bắt đầu, các em hãy truy cập vào trang sau: //jsoneditoronline.org. Đây sẽ là công cụ để chúng ta phân tích nội dung của một API. 
+Tiếp theo sau đây sẽ là một API thực tế được anh lấy làm mẫu: //mở API.
+Các em hãy cùng anh copy link API và sau đó mở trên một tab khác. Anh sẽ copy toàn bộ nội dung bên trong và paste vào công cụ anh đã mở sẵn ở bên cạnh, bấm nút copy và thành quả của chúng ta sẽ được hiện ra ở bên tay phải này nhé. 
+Hãy nhìn ngắm thành quả một chút nào, các em có thấy quen phải không nào, dữ liệu sau khi được chuyển đổi đã hiển thị ở dạng object và array quen thuộc với chúng ta. Bây giờ hãy thử nhìn thành quả và trả lời câu hỏi sau của anh nhé: // đặt câu hỏi liên quan đến API?
+Sau khi ngắm nghía kỹ, làm một bài tập nhỏ sau đây: giả sử em làm một trang web câu hỏi trắc nghiệm về bóng đá dùng API trên, vậy em sẽ sử dụng những dữ liệu gì từ API cho sản phẩm của mình. 
+-----------Thực hành------------------
+Tiếp theo sau đây, anh sẽ giới thiệu một trang web để các em có thể thảo sức tìm kiếm API tùy theo mục đích sử dụng cho sản phẩm của mình có tên là RapidAPI. Sau khi truy cập hãy tạo tài khoản và đăng nhập nhé các em. Với công cụ search các em có thể tìm kiếm cực kỳ nhiều API tiện dụng. Anh sẽ thực hành lấy mẫu đăng ký lấy một API nhé các em. //thực hành.
+
+Chúng ta đều đã biết cách tìm kiếm API rồi, vậy làm sao để sử dụng chúng cho trang web của bản thân, hãy tiếp đến với video tiếp theo nhé.
+
+---------Phương thức fetch()----------------
+Trong video này, chúng ta sẽ tìm hiểu một phương thức cho phép gọi đến một API và lấy dữ liệu từ API chính là fetch().
+Hãy mở visual studio code lên và chúng ta cùng thực hành nhé. 
+Đầu tiên là syntax của fetch sẽ là khai báo một biến thực hiện phương thức fetch, bên trong dấu ngoặc tròn sẽ là link API đặt trong dấu ngoặc kép.
+Với API câu hỏi thể thao bên trên anh sẽ thực hành gọi đến chúng luôn, để vừa ôn lại bài cũ anh sẽ viết dưới dạng một arrow function nhé các em, hãy chú ý và thực hành theo anh nhé. 
+-----code fetch API---------
+syntax của fetch rất là đơn giản phải không nào, các em hãy thử nghĩ xem sau khi gọi hàm fetchAPI, điều gì sẽ xảy ra? Nếu đúng theo code chúng ta sẽ được trả về nội dung bên trong đúng không nào, hãy thử chạy hàm nhé.
+Nhưng kết quả lại không được như mơ, chúng ta được trả về một promise chứ không phải dữ liệu. Promise về cơ bản chỉ là một lời hứa sẽ trả về dữ liệu thôi chứ không phải điều chúng ta cần. Để xử lý trường hợp này, chúng ta sẽ tìm hiểu trong bài học sau nha các em. 
+Các em chú ý xem lại video và chủ động tìm hiểu, hỏi giảng viên để nắm rõ kiến thức nhé. Chúc các em thành công và may mắn. 

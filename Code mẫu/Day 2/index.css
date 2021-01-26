@@ -12,6 +12,9 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 /* 1 */
@@ -38,7 +41,7 @@
 /* Home Menu  */
 
 .home-menu {
-    background-image: url('../image/hero.jpg');
+    background-image: url('./image/hero.jpg');
     height: 700px;
     background-size: cover;
 
@@ -68,6 +71,39 @@ nav .max-width {
     display: flex;
     justify-content: space-around;
 }
+
+nav .menu a{
+    position: relative;
+	display: inline-block;
+	padding: 0 30px;
+	color: #fff;
+	font-size: 14px;
+	letter-spacing: -.5px;
+	text-decoration: none;
+}
+
+nav .menu a:hover{
+    color: orange;
+}
+
+nav .menu a:after{
+    content: "";
+    display: block;
+    position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 0%;
+	height: 3px;
+	background-color: #ffe800;
+	-webkit-transition: all .4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+	-o-transition: all .4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+	transition: all .4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+nav .menu a:hover:after{
+    width: 100%;
+}
+
 
 /* noi sau khi cho vao opacity */
 .max-width .logo {
