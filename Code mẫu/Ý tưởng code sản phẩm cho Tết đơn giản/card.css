@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Potta+One&display=swap');
+.container{
+    width: 700px;
+    height: 394px;
+    position: relative;
+}
+
+img{
+     position: absolute;
+}
+
+.text{
+    position: absolute;
+    width: 300px;
+    height: 100px;
+    margin-left: 300px;
+    margin-top: 250px;
+
+    /* không giải thích quá nhiều về flex  */
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 9;
+    font-family: 'Potta One', cursive;
+    color: rgb(36, 9, 110);
+    font-size: 30px;
+}
