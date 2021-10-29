@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript Advanced Gallery</title>
+    <style>
+        * {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        *:before,
+        *:after {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0 auto;
+            font-family: 'Lato', sans-serif;
+            font-weight: 300;
+            line-height: 1.5;
+            background-color: #fafafa;
+        }
+
+        header {
+            background-color: #f8af1d;
+            color: #fff;
+            text-align: center;
+            padding: 30px 0 50px;
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 65px;
+            font-weight: 400;
+            letter-spacing: 3px;
+            line-height: 0.8;
+            padding-top: 50px;
+            font-family: "Montserrat", sans-serif;
+        }
+
+        header h1 span {
+            text-transform: uppercase;
+            letter-spacing: 7px;
+            font-size: 25px;
+            line-height: 1;
+        }
+
+        header p {
+            padding-top: 30px;
+        }
+
+        * {
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        img {
+            width: 100%;
+            height: 10rem;
+            display: block;
+            -moz-transition: all 0.4s ease-in-out;
+            -o-transition: all 0.4s ease-in-out;
+            -webkit-transition: all 0.4s ease-in-out;
+            transition: all 0.4s ease-in-out;
+        }
+
+        .wrap {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding-left: 20px;
+        }
+
+        .portfolio {
+            margin: 0;
+            overflow: hidden;
+            padding: 0;
+        }
+
+        .portfolio li {
+            float: left;
+            width: 100%;
+            list-style: none;
+            -moz-transition: all 0.4s ease-in-out;
+            -o-transition: all 0.4s ease-in-out;
+            -webkit-transition: all 0.4s ease-in-out;
+            transition: all 0.4s ease-in-out;
+            -webkit-backface-visibility: hidden;
+            -webkit-perspective: 1000;
+        }
+
+        .portfolio figure {
+            margin: 0 20px 20px 0;
+            position: relative;
+            text-align: center;
+            border: 3px solid #000;
+            -moz-border-radius: 8px;
+            -webkit-border-radius: 8px;
+            border-radius: 8px;
+            overflow: hidden;
+            background: url("http://www.seanmichael.me/bathtubgin/wp-content/themes/sean-michael-design/images/fancybox_overlay.png") repeat transparent;
+            -moz-transition: all 0.4s ease-in-out;
+            -o-transition: all 0.4s ease-in-out;
+            -webkit-transition: all 0.4s ease-in-out;
+            transition: all 0.4s ease-in-out;
+        }
+
+        .portfolio figure:hover {
+            border: 3px solid #D29990;
+        }
+
+        .portfolio figure:hover img {
+            opacity: .3;
+            -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+            -moz-transform: scale(5);
+            -ms-transform: scale(5);
+            -webkit-transform: scale(5);
+            transform: scale(5);
+        }
+
+        .portfolio figure:hover figcaption {
+            top: 50%;
+            margin-top: -20px;
+        }
+
+        .portfolio figure:hover h3 {
+            bottom: 70%;
+        }
+
+        .portfolio figcaption {
+            position: absolute;
+            width: 100%;
+            top: 100%;
+            left: 0;
+            -moz-transition: all 0.2s ease-in-out 0.2s;
+            -o-transition: all 0.2s ease-in-out 0.2s;
+            -webkit-transition: all 0.2s ease-in-out;
+            -webkit-transition-delay: 0.2s;
+            transition: all 0.2s ease-in-out 0.2s;
+        }
+
+        a {
+            background-color: #D29990;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-weight: bold;
+            text-shadow: 0 -1px 1px #cd452f;
+            text-decoration: none;
+            color: #fff;
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            -moz-border-radius: 50%;
+            -webkit-border-radius: 50%;
+            border-radius: 50%;
+            display: inline-block;
+            -moz-transition: all 0.2s ease-in-out;
+            -o-transition: all 0.2s ease-in-out;
+            -webkit-transition: all 0.2s ease-in-out;
+            transition: all 0.2s ease-in-out;
+        }
+
+        a:hover {
+            background-color: #e28e80;
+        }
+
+        h3 {
+            color: #fff;
+            font-family: Helvetica, Arial, sans-serif;
+            font-weight: 300;
+            text-transform: uppercase;
+            text-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+            font-weight: 500;
+            padding: 1em .7em;
+            -moz-border-radius: 50%;
+            -webkit-border-radius: 50%;
+            border-radius: 50%;
+            position: absolute;
+            bottom: 100%;
+            left: 0;
+            width: 100%;
+            display: inline-block;
+            padding: 0;
+            margin: 0;
+            -moz-transition: all 0.15s ease-in-out 0.4s;
+            -o-transition: all 0.15s ease-in-out 0.4s;
+            -webkit-transition: all 0.15s ease-in-out;
+            -webkit-transition-delay: 0.4s;
+            transition: all 0.15s ease-in-out 0.4s;
+        }
+
+        .tabs {
+            margin: 0 0 20px 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .tabs li {
+            list-style: none;
+            float: left;
+            margin: 20px 20px 0 0;
+        }
+
+        footer {
+            padding: 1% 5%;
+            text-align: center;
+            background-color: #373B44;
+            color: white;
+        }
+
+        footer a {
+            color: #FE4B74;
+            font-weight: 500;
+            text-decoration: none;
+        }
+
+        [data-filter*="group"] {
+            -moz-border-radius: 8px;
+            -webkit-border-radius: 8px;
+            border-radius: 8px;
+            width: auto;
+            height: auto;
+            padding: 0 1em;
+            border-bottom: 4px solid #c3786c;
+            position: relative;
+            -moz-transition: none;
+            -o-transition: none;
+            -webkit-transition: none;
+            transition: none;
+        }
+
+        [data-filter*="group"]:active {
+            top: 3px;
+            border-bottom: none;
+        }
+
+        [data-filter*="group"].active {
+            background-color: #e28e80;
+        }
+
+        @media (min-width: 460px) {
+            .portfolio li {
+                width: 50%;
+            }
+        }
+
+        @media (min-width: 740px) {
+            .portfolio li {
+                width: 33%;
+            }
+        }
+
+        .lesson {
+            color: #000;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>JavaScript Advanced <br> <span>[Web Project Gallery ]</span></h1>
+    </header>
+    <div class="wrap">
+        <ul class="portfolio">
+            <li class="group-0">
+                <figure>
+                    <img src="https://themeforest.img.customer.envatousercontent.com/files/227463644/prev01.__large_preview.jpg?auto=compress%2Cformat&q=80&fit=crop&crop=top&max-h=8000&max-w=590&s=e571c9577789cdface8c482b9703e17c" alt="placeholder" />
+                    <h3>Day 2</h3>
+                    <figcaption><a class="" href="https://mindxdoc.github.io/JSB/Sample/Day-1" target="_blank">Xem</a></figcaption>
+                </figure>
+                <h2 class="lesson">Day 2</h2>
+            </li>
+            <li class="group-0">
+                <figure>
+                    <img src="https://themeforest.img.customer.envatousercontent.com/files/227463644/prev01.__large_preview.jpg?auto=compress%2Cformat&q=80&fit=crop&crop=top&max-h=8000&max-w=590&s=e571c9577789cdface8c482b9703e17c" alt="placeholder" />
+                    <h3>Day 3-4</h3>
+                    <figcaption><a class="" href="https://mindxdoc.github.io/JSB/Sample/Day-3-4" target="_blank">Xem</a></figcaption>
+                </figure>
+                <h2 class="lesson">Day 3-4</h2>
+            </li>
+            <li class="group-0">
+                <figure>
+                    <img src="https://themeforest.img.customer.envatousercontent.com/files/227463644/prev01.__large_preview.jpg?auto=compress%2Cformat&q=80&fit=crop&crop=top&max-h=8000&max-w=590&s=e571c9577789cdface8c482b9703e17c" alt="placeholder" />
+                    <h3>Day 6</h3>
+                    <figcaption><a class="" href="https://mindxdoc.github.io/JSB/Sample/Day-6" target="_blank">Xem</a></figcaption>
+                </figure>
+                <h2 class="lesson">Day 6</h2>
+            </li>
+            <li class="group-0">
+                <figure>
+                    <img src="https://themeforest.img.customer.envatousercontent.com/files/227463644/prev01.__large_preview.jpg?auto=compress%2Cformat&q=80&fit=crop&crop=top&max-h=8000&max-w=590&s=e571c9577789cdface8c482b9703e17c" alt="placeholder" />
+                    <h3>Day 7</h3>
+                    <figcaption><a class="" href="https://mindxdoc.github.io/JSB/Sample/Day-7" target="_blank">Xem</a></figcaption>
+                </figure>
+                <h2 class="lesson">Day 7</h2>
+            </li>
+            <li class="group-0">
+                <figure>
+                    <img src="https://themeforest.img.customer.envatousercontent.com/files/227463644/prev01.__large_preview.jpg?auto=compress%2Cformat&q=80&fit=crop&crop=top&max-h=8000&max-w=590&s=e571c9577789cdface8c482b9703e17c" alt="placeholder" />
+                    <h3>Day 8</h3>
+                    <figcaption><a class="" href="https://mindxdoc.github.io/JSB/Sample/Day-8" target="_blank">Xem</a></figcaption>
+                </figure>
+                <h2 class="lesson">Day-8</h2>
+            </li>
+            <li class="group-0">
+                <figure>
+                    <img src="https://themeforest.img.customer.envatousercontent.com/files/227463644/prev01.__large_preview.jpg?auto=compress%2Cformat&q=80&fit=crop&crop=top&max-h=8000&max-w=590&s=e571c9577789cdface8c482b9703e17c" alt="placeholder" />
+                    <h3>Day 9</h3>
+                    <figcaption><a class="" href="https://mindxdoc.github.io/JSB/Sample/Day-9" target="_blank">Xem</a></figcaption>
+                </figure>
+                <h2 class="lesson">Day 9</h2>
+            </li>
+        </ul>
+    </div>
+    <footer>
+        Made by <a href="https://mindx.edu.vn" style="width: 0; height: 0">@mindxschool</a>
+    </footer>
+</body>
+
+</html>
